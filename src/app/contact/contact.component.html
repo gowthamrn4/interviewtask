@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 col-sm-5 col-5">
+      <div class="contact">
+        <div class="row text-center" style="padding:20px;">
+          <div class="col-md-5 col-sm-5 col-5">
+            <input id="search" type="text" class="form-control" placeholder="Search...">
+               </div>
+        </div>
+        <div class="action text-center">
+          <ul>
+            <li><a routerLink="/landingpage/addnew"><i class="fa fa-plus-circle text-center"  aria-hidden="true">ADD</i></a></li>
+
+          </ul>
+        </div><br><hr>
+        <div class="row text-center" style="margin:0px auto;width:100px;">
+            <div class="col-md-5 col-sm-5 col-5">
+             <h5>CONTACT</h5>
+            </div>
+        </div><hr>
+        <div *ngFor="let BindContact of BindContact">
+        <div class="row">
+
+          <div class="col-md-2 col-sm-4 col-4">
+            <img src="assets/img/avatar5.png" class="img-circle" width="50">
+          </div>
+          <a routerLink="/landingpage/viewpage1/{{BindContact._id}}">
+
+          <div class="col-md-6 col-sm-4 col-4 text-center" >
+            <span>{{BindContact.firstName}} {{BindContact.lastName}}</span><br>
+            <span>{{BindContact.mobileNumber}}</span><BR>
+          </div>
+        </a>
+
+          <div class="col-md-4 col-sm-4 col-4">
+              <a (click)="calllog(BindContact)"><i class="fa fa-phone fa-2x" style="color:white;padding:10px;" aria-hidden="true"></i></a>             
+              <a routerLink="/landingpage/message"><i class="fa fa-envelope-o fa-2x" style="color:white;padding:10px;" aria-hidden="true"></i></a>             
+
+          </div>
+          </div>
+          <hr>
+        </div>
+     
+
+
+         
+
+
+      </div>
+    </div>
+
+    <div class="test">
+      <div class="col-md-5 col-sm-5 col-5">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    
+  </div>
+</div>

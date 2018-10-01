@@ -1,0 +1,38 @@
+*
+{
+    padding:0px;
+    margin:0px;
+}
+#search
+{
+    height:20px;
+    width:250px;
+    margin:0px auto;
+}
+hr{
+    color: black;
+    height:20px;
+}
+.contact
+{
+    width:300px;
+    height:600px;
+    
+    background: black;
+    color: white;
+}
+.container
+{
+    max-width:800px;
+}
+@media only screen and (max-width:500px)
+{
+    .contact
+    {
+        width:200px;
+    }
+    .heading
+    {
+        width:200px;
+    }
+}

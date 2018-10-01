@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="addContact">
+         <div class="row text-center">
+              <div class="col-md-12 col-sm-12 col-12">
+                 <h4 id="header">NEW CONTACT</h4>
+             </div>
+        </div>
+          <br>
+                 <div class="test">
+                      <div class="row">
+                         <div class="col-md-12">
+                            <div class="photo text-center">
+                                <img class="img-circle" src="assets/img/default-avatar.png" width="100">
+                             </div>
+                         </div>
+                     </div>
+                       <hr>
+                         <br>
+ <!-- <ul class="text-center">
+   <li>
+       <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+   </li>
+   <li>
+     <input type="text" class="form-control" placeholder="first name">
+   </li>
+   <li>
+       <input type="text" class="form-control" placeholder="last name">
+     </li>
+ </ul>
+ <br>
+ 
+ <div class="INPUT">
+     <ul>
+     <li><i class="fa fa-phone fa-2x" style="color:white" aria-hidden="true"></i></li>
+   </ul>
+ </div> -->
+ 
+ <div class="input">
+    <form #personForm="ngForm"(ngSubmit)="onSubmitnews(personForm.value)">
+       <div class="row">
+           <div class="col-md-6 col-sm-5 col-5">
+               First Name:  <input type="text" name="firstName" [(ngModel)]="contact.firstName"  class="form-control" required>
+            </div>
+                <div class="col-md-1"></div>
+                    <div class="col-md-5 col-sm-5 col-5">
+                        Last Name:  <input type="text" name="lastName" [(ngModel)]="contact.lastName" class="form-control" required>
+                    </div>
+               </div>
+                        <div class="row">
+                           <div class="col-md-6 col-sm-6 col-6">
+                               Phone Number <input type="text" name="phoneNumber"  [(ngModel)]="contact.mobileNumber" class="form-control" required>
+                                   </div>
+                                      <div class="col-md-1"></div><br>
+                                          <!-- <div class="col-md-5 col-sm-5 col-5"><span style="background:gray;border-radius:20px;"> + ADD PHONE NUMBER</span> -->
+                                       <!-- </div> -->
+                            </div>
+
+                                          <div class="row">
+                                               <div class="col-md-6 col-sm-6 col-6">
+                                                    Email <input name="email" type="text" [(ngModel)]="contact.email" class="form-control" required>
+                                                </div>
+                                           </div><br>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-6">
+                                                         <button type="button" class="btn btn-primary btn-round" (click)="onSubmitnews(personForm.value)"
+                                                          [disabled]="!personForm.form.valid">SAVE</button>|
+
+                                                       </div>
+                                                    </div>
+    </form>
+     
+ </div>
+ 
+   </div>
+ </div>
+
+ 

@@ -1,0 +1,53 @@
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<div class="wrapper"style="overflow:hidden">
+
+  <header class="main-header">
+    
+    <nav class="navbar navbar-static-top">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </nav>
+  </header>
+
+
+  <aside class="main-sidebar">
+    <section class="sidebar" >
+    
+      <ul class="sidebar-menu" >
+        <li class="treeview">
+          <a href="#">
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        </li>
+        <br><br>
+    <li>
+       <a routerLink="/landingpage/contact" routerLinkActive="active"><i class="fa fa-address-book fa-2x" aria-hidden="true"></i></a>
+    </li>
+    <li>                       
+        <a routerLink="/landingpage/phone" routerLinkActive="active"><i class="fa fa-phone  fa-2x" style="color:azure;" aria-hidden="true"></i></a>
+    </li>
+    <li>
+      <a routerLink="/landingpage/message" routerLinkActive="active"><i class="fa fa-envelope-o fa-2x" style="color:azure;" aria-hidden="true"></i></a>
+    </li>
+      </ul>
+    </section>
+  </aside>   
+  <div class="content-wrapper" >
+      
+       <section class="content-header">
+         <router-outlet></router-outlet>
+       </section>    
+</div>
+
+
+
+    
+  </div>
+  </body>

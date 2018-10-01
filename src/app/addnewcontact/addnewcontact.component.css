@@ -1,0 +1,41 @@
+#header
+{
+    color:black;
+    font-weight:bold;
+}
+*{
+    padding:0px;
+    
+}
+.container
+{
+    max-width:600px;
+    
+   
+}
+.input
+{
+    padding:30px;
+}
+button
+{
+    padding:10px;
+}
+/* .input span
+{
+    padding:15px;
+    margin:10px;
+} */
+.input input{
+    padding:10px;
+}
+ul li{
+    float: left;
+    padding:30px;
+    list-style-type: none;
+}
+#span
+{
+    background:gray;
+    border-radius:20PX;
+}

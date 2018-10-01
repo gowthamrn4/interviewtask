@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-5">
+        <div class="contact">
+          <div class="row text-center" style="padding:20px;">
+            <div class="col-md-5 col-sm-5 col-5">
+              <input id="search" type="text" class="form-control" placeholder="Search...">
+            </div>
+          </div>
+          <div class="row text-center" style="margin:0px auto;width:100px;">
+              <div class="col-md-5 col-sm-5 col-5">
+               <h5>Histroy</h5>
+              </div>
+          </div><hr>
+          <div *ngFor="let BindContact of BindContact">
+          <div class="row">
+  
+            <div class="col-md-4 col-sm-4 col-4">
+              <img src="assets/img/avatar5.png" class="img-circle" width="50">
+            </div>
+  
+            <div class="col-md-8 col-sm-4 col-4" >
+              <span>{{BindContact.firstName}} {{BindContact.lastName}}</span><br>
+              <span>{{BindContact.mobileNumber}}</span><BR>
+              <span>{{BindContact.dateTime}}</span>
+            </div>
+          
+  
+            </div>
+            <hr>
+          </div>
+
+        
+  
+  
+        </div>
+      </div>
+  
+      <div class="col-md-5 col-sm-5 col-5">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,12 @@
+.box
+{
+width:700px;
+
+
+}
+@media only screen and (max-width:1000px)
+{
+.box{
+    width:240px;
+}
+}
