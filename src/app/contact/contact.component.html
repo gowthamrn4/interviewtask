@@ -17,9 +17,10 @@
             <div class="col-md-5 col-sm-5 col-5">
              <h5>CONTACT</h5>
             </div>
-        </div><hr>
+        </div><br>
+        <hr>
         <div *ngFor="let BindContact of BindContact">
-        <div class="row">
+        <div class="row" style="padding-left:25px">
 
           <div class="col-md-2 col-sm-4 col-4">
             <img src="assets/img/avatar5.png" class="img-circle" width="50">
@@ -34,10 +35,10 @@
 
           <div class="col-md-4 col-sm-4 col-4">
               <a (click)="calllog(BindContact)"><i class="fa fa-phone fa-2x" style="color:white;padding:10px;" aria-hidden="true"></i></a>             
-              <a routerLink="/landingpage/message"><i class="fa fa-envelope-o fa-2x" style="color:white;padding:10px;" aria-hidden="true"></i></a>             
+              <a routerLink="/landingpage/createmessage/{{BindContact._id}}"><i class="fa fa-envelope-o fa-2x" style="color:white;padding:10px;" aria-hidden="true"></i></a>             
 
           </div>
-          </div>
+          </div><br>
           <hr>
         </div>
      

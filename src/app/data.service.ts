@@ -18,6 +18,8 @@ import { Headers } from '@angular/http';
   createLog:any;
   getCalls:any;
   createMessage1:any;
+  getMessage1:any;
+  DeleteCallLog:any;
       
   constructor( private http:Http,private router:Router) { }
   ngOnInit()
@@ -53,9 +55,19 @@ import { Headers } from '@angular/http';
     return this.http.post('https://interviewtask.herokuapp.com/callLog/createLog',value)
     .pipe(map(data=>this.createLog=data.json()))
   }
-  createMessage(value)
+  createMessageData(value)
   {
-    return this.http.post('https://interviewtask.herokuapp.com/message/createMessage',value)
+    return this.http.post('https://interviewtask.herokuapp.com/contact/createMessage',value)
     .pipe(map(data=>this.createMessage1=data.json()))
+  }
+  getMessages()
+  {
+    return this.http.get('https://interviewtask.herokuapp.com/contact/getContacts')
+    .pipe(map(data=>this.getMessage1=data.json()))
+  }
+  DelCall(value)
+  {
+    return this.http.post('https://interviewtask.herokuapp.com/callLog/removeCall',value)
+    .pipe(map(data=>this.DeleteCallLog=data.json()))
   }
   }

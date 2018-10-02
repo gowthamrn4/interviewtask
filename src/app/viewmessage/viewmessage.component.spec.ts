@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CallEventComponent } from './call-event.component';
+import { ViewmessageComponent } from './viewmessage.component';
 
-describe('CallEventComponent', () => {
-  let component: CallEventComponent;
-  let fixture: ComponentFixture<CallEventComponent>;
+describe('ViewmessageComponent', () => {
+  let component: ViewmessageComponent;
+  let fixture: ComponentFixture<ViewmessageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CallEventComponent ]
+      declarations: [ ViewmessageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CallEventComponent);
+    fixture = TestBed.createComponent(ViewmessageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

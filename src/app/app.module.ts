@@ -10,13 +10,12 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { ContactComponent } from './contact/contact.component';
 import {PhoneComponent} from './phone/phone.component';
 import {MessageComponent } from './message/message.component';
-import { SendMessageComponent } from './message/send-message/send-message.component';
 import { CallComponent } from './phone/call/call.component';
 import { DataService } from './data.service';
-import { CallEventComponent } from './call-event/call-event.component';
 import { Viewpage1Component } from './viewpage1/viewpage1.component';
 import { AddnewcontactComponent } from './addnewcontact/addnewcontact.component';
 import { CreatemessageComponent } from './createmessage/createmessage.component';
+import { ViewmessageComponent } from './viewmessage/viewmessage.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +24,11 @@ import { CreatemessageComponent } from './createmessage/createmessage.component'
     ContactComponent,
     MessageComponent,
     PhoneComponent,
-    SendMessageComponent,
     CallComponent,
-    CallEventComponent,
     Viewpage1Component,
     AddnewcontactComponent,
-    CreatemessageComponent
+    CreatemessageComponent,
+    ViewmessageComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +51,6 @@ import { CreatemessageComponent } from './createmessage/createmessage.component'
                     {path:'message',component:MessageComponent,
                   children:[
                     { path:'',pathMatch:'full',redirectTo:'sendmessage' },
-                    {path:'sendmessage',component:SendMessageComponent}
                   ]}
                   ]},
     ])

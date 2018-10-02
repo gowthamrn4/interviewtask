@@ -1,7 +1,12 @@
 .box
 {
-width:700px;
-   
+max-width:1200px;
+margin-bottom: 1px; 
+
+}
+.direct-chat-messages
+{
+    height:500px;
 }
 
 

@@ -43,23 +43,5 @@ calllog(value)
 
     })
 }
-message(value)
-{
-  let data={
-    uid:value.uid,
-    firstName:value.firstName,
-    lastName:value.lastName,
-    email:value.email,
-    message:"Message",
-    dateTime:new Date().toLocaleTimeString()
-  }
-  alert("Your Call Created Successfully");
-  this.dataservice.createMessage(data).subscribe(res=>
-    {
-      console.log(res);
-      this.router.navigate(['landingpage/phone'])
 
-
-    })
-}
 }

@@ -183,20 +183,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contact_contact_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contact/contact.component */ "./src/app/contact/contact.component.ts");
 /* harmony import */ var _phone_phone_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./phone/phone.component */ "./src/app/phone/phone.component.ts");
 /* harmony import */ var _message_message_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./message/message.component */ "./src/app/message/message.component.ts");
-/* harmony import */ var _message_send_message_send_message_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./message/send-message/send-message.component */ "./src/app/message/send-message/send-message.component.ts");
-/* harmony import */ var _phone_call_call_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./phone/call/call.component */ "./src/app/phone/call/call.component.ts");
-/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
-/* harmony import */ var _call_event_call_event_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./call-event/call-event.component */ "./src/app/call-event/call-event.component.ts");
-/* harmony import */ var _viewpage1_viewpage1_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./viewpage1/viewpage1.component */ "./src/app/viewpage1/viewpage1.component.ts");
-/* harmony import */ var _addnewcontact_addnewcontact_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./addnewcontact/addnewcontact.component */ "./src/app/addnewcontact/addnewcontact.component.ts");
-/* harmony import */ var _createmessage_createmessage_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./createmessage/createmessage.component */ "./src/app/createmessage/createmessage.component.ts");
+/* harmony import */ var _phone_call_call_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./phone/call/call.component */ "./src/app/phone/call/call.component.ts");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _viewpage1_viewpage1_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./viewpage1/viewpage1.component */ "./src/app/viewpage1/viewpage1.component.ts");
+/* harmony import */ var _addnewcontact_addnewcontact_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./addnewcontact/addnewcontact.component */ "./src/app/addnewcontact/addnewcontact.component.ts");
+/* harmony import */ var _createmessage_createmessage_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./createmessage/createmessage.component */ "./src/app/createmessage/createmessage.component.ts");
+/* harmony import */ var _viewmessage_viewmessage_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./viewmessage/viewmessage.component */ "./src/app/viewmessage/viewmessage.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -224,12 +222,11 @@ var AppModule = /** @class */ (function () {
                 _contact_contact_component__WEBPACK_IMPORTED_MODULE_7__["ContactComponent"],
                 _message_message_component__WEBPACK_IMPORTED_MODULE_9__["MessageComponent"],
                 _phone_phone_component__WEBPACK_IMPORTED_MODULE_8__["PhoneComponent"],
-                _message_send_message_send_message_component__WEBPACK_IMPORTED_MODULE_10__["SendMessageComponent"],
-                _phone_call_call_component__WEBPACK_IMPORTED_MODULE_11__["CallComponent"],
-                _call_event_call_event_component__WEBPACK_IMPORTED_MODULE_13__["CallEventComponent"],
-                _viewpage1_viewpage1_component__WEBPACK_IMPORTED_MODULE_14__["Viewpage1Component"],
-                _addnewcontact_addnewcontact_component__WEBPACK_IMPORTED_MODULE_15__["AddnewcontactComponent"],
-                _createmessage_createmessage_component__WEBPACK_IMPORTED_MODULE_16__["CreatemessageComponent"]
+                _phone_call_call_component__WEBPACK_IMPORTED_MODULE_10__["CallComponent"],
+                _viewpage1_viewpage1_component__WEBPACK_IMPORTED_MODULE_12__["Viewpage1Component"],
+                _addnewcontact_addnewcontact_component__WEBPACK_IMPORTED_MODULE_13__["AddnewcontactComponent"],
+                _createmessage_createmessage_component__WEBPACK_IMPORTED_MODULE_14__["CreatemessageComponent"],
+                _viewmessage_viewmessage_component__WEBPACK_IMPORTED_MODULE_15__["ViewmessageComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -241,90 +238,26 @@ var AppModule = /** @class */ (function () {
                         children: [
                             { path: '', pathMatch: 'full', redirectTo: 'contact' },
                             { path: 'contact', component: _contact_contact_component__WEBPACK_IMPORTED_MODULE_7__["ContactComponent"] },
-                            { path: 'addnew', component: _addnewcontact_addnewcontact_component__WEBPACK_IMPORTED_MODULE_15__["AddnewcontactComponent"] },
-                            { path: 'viewpage1/:_id', component: _viewpage1_viewpage1_component__WEBPACK_IMPORTED_MODULE_14__["Viewpage1Component"] },
-                            { path: 'createmessage/:_id', component: _createmessage_createmessage_component__WEBPACK_IMPORTED_MODULE_16__["CreatemessageComponent"] },
+                            { path: 'addnew', component: _addnewcontact_addnewcontact_component__WEBPACK_IMPORTED_MODULE_13__["AddnewcontactComponent"] },
+                            { path: 'viewpage1/:_id', component: _viewpage1_viewpage1_component__WEBPACK_IMPORTED_MODULE_12__["Viewpage1Component"] },
+                            { path: 'createmessage/:_id', component: _createmessage_createmessage_component__WEBPACK_IMPORTED_MODULE_14__["CreatemessageComponent"] },
                             { path: 'phone', component: _phone_phone_component__WEBPACK_IMPORTED_MODULE_8__["PhoneComponent"],
                                 children: [
                                     { path: '', pathMatch: 'full', redirectTo: 'call' },
-                                    { path: '', component: _phone_call_call_component__WEBPACK_IMPORTED_MODULE_11__["CallComponent"] }
+                                    { path: '', component: _phone_call_call_component__WEBPACK_IMPORTED_MODULE_10__["CallComponent"] }
                                 ] },
                             { path: 'message', component: _message_message_component__WEBPACK_IMPORTED_MODULE_9__["MessageComponent"],
                                 children: [
                                     { path: '', pathMatch: 'full', redirectTo: 'sendmessage' },
-                                    { path: 'sendmessage', component: _message_send_message_send_message_component__WEBPACK_IMPORTED_MODULE_10__["SendMessageComponent"] }
                                 ] }
                         ] },
                 ])
             ],
-            providers: [_data_service__WEBPACK_IMPORTED_MODULE_12__["DataService"]],
+            providers: [_data_service__WEBPACK_IMPORTED_MODULE_11__["DataService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/call-event/call-event.component.css":
-/*!*****************************************************!*\
-  !*** ./src/app/call-event/call-event.component.css ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ""
-
-/***/ }),
-
-/***/ "./src/app/call-event/call-event.component.html":
-/*!******************************************************!*\
-  !*** ./src/app/call-event/call-event.component.html ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<p>\n  call-event works!\n</p>\n"
-
-/***/ }),
-
-/***/ "./src/app/call-event/call-event.component.ts":
-/*!****************************************************!*\
-  !*** ./src/app/call-event/call-event.component.ts ***!
-  \****************************************************/
-/*! exports provided: CallEventComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CallEventComponent", function() { return CallEventComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var CallEventComponent = /** @class */ (function () {
-    function CallEventComponent() {
-    }
-    CallEventComponent.prototype.ngOnInit = function () {
-    };
-    CallEventComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-call-event',
-            template: __webpack_require__(/*! ./call-event.component.html */ "./src/app/call-event/call-event.component.html"),
-            styles: [__webpack_require__(/*! ./call-event.component.css */ "./src/app/call-event/call-event.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], CallEventComponent);
-    return CallEventComponent;
 }());
 
 
@@ -349,7 +282,7 @@ module.exports = "*\r\n{\r\n    padding:0px;\r\n    margin:0px;\r\n}\r\n#search\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-5 col-sm-5 col-5\">\n      <div class=\"contact\">\n        <div class=\"row text-center\" style=\"padding:20px;\">\n          <div class=\"col-md-5 col-sm-5 col-5\">\n            <input id=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search...\">\n               </div>\n        </div>\n        <div class=\"action text-center\">\n          <ul>\n            <li><a routerLink=\"/landingpage/addnew\"><i class=\"fa fa-plus-circle text-center\"  aria-hidden=\"true\">ADD</i></a></li>\n\n          </ul>\n        </div><br><hr>\n        <div class=\"row text-center\" style=\"margin:0px auto;width:100px;\">\n            <div class=\"col-md-5 col-sm-5 col-5\">\n             <h5>CONTACT</h5>\n            </div>\n        </div><hr>\n        <div *ngFor=\"let BindContact of BindContact\">\n        <div class=\"row\">\n\n          <div class=\"col-md-2 col-sm-4 col-4\">\n            <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n          </div>\n          <a routerLink=\"/landingpage/viewpage1/{{BindContact._id}}\">\n\n          <div class=\"col-md-6 col-sm-4 col-4 text-center\" >\n            <span>{{BindContact.firstName}} {{BindContact.lastName}}</span><br>\n            <span>{{BindContact.mobileNumber}}</span><BR>\n          </div>\n        </a>\n\n          <div class=\"col-md-4 col-sm-4 col-4\">\n              <a (click)=\"calllog(BindContact)\"><i class=\"fa fa-phone fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n              <a routerLink=\"/landingpage/message\"><i class=\"fa fa-envelope-o fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n\n          </div>\n          </div>\n          <hr>\n        </div>\n     \n\n\n         \n\n\n      </div>\n    </div>\n\n    <div class=\"test\">\n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n    \n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-5 col-sm-5 col-5\">\n      <div class=\"contact\">\n        <div class=\"row text-center\" style=\"padding:20px;\">\n          <div class=\"col-md-5 col-sm-5 col-5\">\n            <input id=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search...\">\n               </div>\n        </div>\n        <div class=\"action text-center\">\n          <ul>\n            <li><a routerLink=\"/landingpage/addnew\"><i class=\"fa fa-plus-circle text-center\"  aria-hidden=\"true\">ADD</i></a></li>\n\n          </ul>\n        </div><br><hr>\n        <div class=\"row text-center\" style=\"margin:0px auto;width:100px;\">\n            <div class=\"col-md-5 col-sm-5 col-5\">\n             <h5>CONTACT</h5>\n            </div>\n        </div><br>\n        <hr>\n        <div *ngFor=\"let BindContact of BindContact\">\n        <div class=\"row\" style=\"padding-left:25px\">\n\n          <div class=\"col-md-2 col-sm-4 col-4\">\n            <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n          </div>\n          <a routerLink=\"/landingpage/viewpage1/{{BindContact._id}}\">\n\n          <div class=\"col-md-6 col-sm-4 col-4 text-center\" >\n            <span>{{BindContact.firstName}} {{BindContact.lastName}}</span><br>\n            <span>{{BindContact.mobileNumber}}</span><BR>\n          </div>\n        </a>\n\n          <div class=\"col-md-4 col-sm-4 col-4\">\n              <a (click)=\"calllog(BindContact)\"><i class=\"fa fa-phone fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n              <a routerLink=\"/landingpage/createmessage/{{BindContact._id}}\"><i class=\"fa fa-envelope-o fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n\n          </div>\n          </div><br>\n          <hr>\n        </div>\n     \n\n\n         \n\n\n      </div>\n    </div>\n\n    <div class=\"test\">\n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n    \n  </div>\n</div>"
 
 /***/ }),
 
@@ -409,22 +342,6 @@ var ContactComponent = /** @class */ (function () {
             _this.router.navigate(['landingpage/phone']);
         });
     };
-    ContactComponent.prototype.message = function (value) {
-        var _this = this;
-        var data = {
-            uid: value.uid,
-            firstName: value.firstName,
-            lastName: value.lastName,
-            email: value.email,
-            message: "Message",
-            dateTime: new Date().toLocaleTimeString()
-        };
-        alert("Your Call Created Successfully");
-        this.dataservice.createMessage(data).subscribe(function (res) {
-            console.log(res);
-            _this.router.navigate(['landingpage/phone']);
-        });
-    };
     ContactComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-contact',
@@ -447,7 +364,7 @@ var ContactComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".box\r\n{\r\nwidth:700px;\r\n   \r\n}\r\n\r\n\r\n@media only screen and (max-width:700px)\r\n{\r\n.box{\r\n    width:440px;\r\n}\r\n}"
+module.exports = ".box\r\n{\r\nmax-width:1200px;\r\nmargin-bottom: 1px; \r\n\r\n}\r\n.direct-chat-messages\r\n{\r\n    height:500px;\r\n}\r\n@media only screen and (max-width:700px)\r\n{\r\n.box{\r\n    width:440px;\r\n}\r\n}"
 
 /***/ }),
 
@@ -458,7 +375,7 @@ module.exports = ".box\r\n{\r\nwidth:700px;\r\n   \r\n}\r\n\r\n\r\n@media only s
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Construct the box with style you want. Here we are using box-danger -->\n<!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->\n<!-- The contextual class should match the box, so we are using direct-chat-danger -->\n<div class=\"box\">\n    <div class=\"box box-danger direct-chat direct-chat-danger\" >\n        <div class=\"box-header with-border\">\n          <h3 class=\"box-title\">Direct Chat</h3>\n          <div class=\"box-tools pull-right\">\n            <span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3</span>\n            <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i></button>\n            <!-- In box-tools add this button if you intend to use the contacts pane -->\n            <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n            <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i class=\"fa fa-times\"></i></button>\n          </div>\n        </div><!-- /.box-header -->\n        <div class=\"box-body\">\n          <!-- Conversations are loaded here -->\n          <div class=\"direct-chat-messages\">\n            <!-- Message. Default to the left -->\n            <div class=\"direct-chat-msg\">\n              <div class=\"direct-chat-info clearfix\">\n                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n              </div><!-- /.direct-chat-info -->\n              <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n              <div class=\"direct-chat-text\">\n                Is this template really for free? That's unbelievable!\n              </div><!-- /.direct-chat-text -->\n            </div><!-- /.direct-chat-msg -->\n      \n            <!-- Message to the right -->\n            <div class=\"direct-chat-msg right\">\n              <div class=\"direct-chat-info clearfix\">\n                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n              </div><!-- /.direct-chat-info -->\n              <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n              <div class=\"direct-chat-text\">\n                You better believe it!\n              </div><!-- /.direct-chat-text -->\n            </div><!-- /.direct-chat-msg -->\n          </div><!--/.direct-chat-messages-->\n      \n          <!-- Contacts are loaded here -->\n          <div class=\"direct-chat-contacts\">\n            <ul class=\"contacts-list\">\n              <li>\n                <a href=\"#\">\n                  <img class=\"contacts-list-img\" src=\"assets/img/avatar5.png\" alt=\"Contact Avatar\">\n                  <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                  </div><!-- /.contacts-list-info -->\n                </a>\n              </li><!-- End Contact Item -->\n            </ul><!-- /.contatcts-list -->\n          </div><!-- /.direct-chat-pane -->\n        </div><!-- /.box-body -->\n        <div class=\"box-footer\">\n          <div class=\"input-group\">\n            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\" class=\"form-control\">\n            <span class=\"input-group-btn\">\n              <button type=\"button\" class=\"btn btn-danger btn-flat\">Send</button>\n            </span>\n          </div>\n        </div><!-- /.box-footer-->\n      </div><!--/.direct-chat -->\n      </div>"
+module.exports = "\n<div class=\"box\">\n    <div class=\"box box-danger direct-chat direct-chat-danger\">\n        <div class=\"box-header with-border\">\n          <h3 class=\"box-title\">Messages</h3>\n          <div class=\"box-tools pull-right\">\n            <div class=\"count\" *ngFor=\"let UserMessage of CurrentUsersMessage;let i=index\"></div>\n            <span data-toggle=\"tooltip\" title=\"{{CurrentUsersMessage.length}} New Messages\" class=\"badge bg-red\">{{CurrentUsersMessage.length}}</span>\n            <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i></button>\n            <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n            <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i class=\"fa fa-times\"></i></button>\n          </div>\n        </div>\n        <div class=\"box-body\">\n          <div class=\"direct-chat-messages\">\n            <div class=\"direct-chat-msg\">\n              <div class=\"direct-chat-info clearfix\">\n                <span class=\"direct-chat-name pull-left\">{{BindMessage.firstName}} {{BindMessage.lastName}}</span>\n                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n              </div>\n              <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n              <div class=\"direct-chat-text\">\n               Hi.......\n              </div>\n            </div>\n      \n           \n            <div class=\"direct-chat-msg right\"  *ngFor=\"let UserMessage of CurrentUsersMessage\">\n              <div class=\"direct-chat-info clearfix\" >\n                <span class=\"direct-chat-name pull-right\">{{BindMessage.firstName}} {{BindMessage.lastName}}</span>\n                <span class=\"direct-chat-timestamp pull-left\">{{UserMessage.dateTime}}</span>\n              </div>\n              <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n              <div class=\"direct-chat-text\">\n              {{UserMessage.value}}\n              </div>\n            </div>\n          </div>\n      \n          <div class=\"direct-chat-contacts\">\n            <ul class=\"contacts-list\">\n              <li>\n                <a href=\"#\">\n                  <img class=\"contacts-list-img\" src=\"assets/img/avatar5.png\" alt=\"Contact Avatar\">\n                  <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\" >\n                    \n                      <small class=\"contacts-list-date pull-right\"></small>\n                    </span>\n                    <span class=\"contacts-list-msg\">{{CurrentUsersMessage.value}}</span>\n                  </div>\n                </a>\n              </li>\n            </ul>\n          </div>\n        </div>\n        <form #personForm=\"ngForm\"(ngSubmit)=\"onSubmit(personForm.value)\">\n\n        <div class=\"box-footer\">\n          <div class=\"input-group\">\n                  <input type=\"text\" name=\"message\"  placeholder=\"Type Message ...\" class=\"form-control\" ngModel required>\n            <span class=\"input-group-btn\">\n                <button class=\"btn  btn-round\" type=\"submit\" [disabled]=\"!personForm.form.valid\">Send</button>            </span>\n         \n          </div>\n        </div>\n      </form>\n      </div>\n      </div>"
 
 /***/ }),
 
@@ -473,6 +390,9 @@ module.exports = "<!-- Construct the box with style you want. Here we are using 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreatemessageComponent", function() { return CreatemessageComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/fesm5/http.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -483,10 +403,76 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var CreatemessageComponent = /** @class */ (function () {
-    function CreatemessageComponent() {
+    function CreatemessageComponent(route, router, dataservice, http) {
+        this.route = route;
+        this.router = router;
+        this.dataservice = dataservice;
+        this.http = http;
+        this.CreateMessage = {
+            _id: '',
+            firstName: '',
+            lastName: '',
+            mobileNumber: '',
+            email: '',
+            uid: '',
+            dateTime: new Date,
+        };
+        this.BindMessage = {
+            _id: '',
+            firstName: '',
+            lastName: '',
+            mobileNumber: '',
+            uid: '',
+            Messages: []
+        };
     }
     CreatemessageComponent.prototype.ngOnInit = function () {
+        this.ListMessage();
+    };
+    CreatemessageComponent.prototype.onSubmit = function (value) {
+        var _this = this;
+        var data = {
+            _id: this.BindMessage._id,
+            message: {
+                value: value.message,
+                dateTime: new Date()
+            }
+        };
+        console.log(data);
+        this.dataservice.createMessageData(data).subscribe(function (res) {
+            _this.ListMessage();
+            console.log(res);
+            alert("Your Message Is Created");
+        });
+    };
+    CreatemessageComponent.prototype.ListMessage = function () {
+        var _this = this;
+        this.CurrentUsersMessage = [];
+        this.allUsers = [];
+        this.id = this.route.snapshot.params['_id'];
+        this.dataservice.getContact().subscribe(function (res) {
+            _this.allUsers = res;
+            console.log(_this.allUsers);
+            for (var i = 0; i < _this.allUsers.length; i++) {
+                for (var k = 0; k < _this.allUsers[i].message.length; k++) {
+                    // this.MyData=this.allUsers[i].message;
+                } // }console.log(this.MyData);
+                if (_this.id === _this.allUsers[i]._id) {
+                    _this.BindMessage._id = _this.allUsers[i]._id;
+                    _this.BindMessage.firstName = _this.allUsers[i].firstName;
+                    _this.BindMessage.lastName = _this.allUsers[i].lastName;
+                    _this.BindMessage.mobileNumber = _this.allUsers[i].mobileNumber;
+                    _this.BindMessage.uid = _this.allUsers[i].uid;
+                    _this.BindMessage.Messages = _this.allUsers[i].message;
+                    _this.CurrentUsersMessage = _this.BindMessage.Messages;
+                }
+            }
+            console.log(_this.CurrentUsersMessage);
+        });
     };
     CreatemessageComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -494,7 +480,7 @@ var CreatemessageComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./createmessage.component.html */ "./src/app/createmessage/createmessage.component.html"),
             styles: [__webpack_require__(/*! ./createmessage.component.css */ "./src/app/createmessage/createmessage.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_1__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"], _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"], _angular_http__WEBPACK_IMPORTED_MODULE_3__["Http"]])
     ], CreatemessageComponent);
     return CreatemessageComponent;
 }());
@@ -567,10 +553,20 @@ var DataService = /** @class */ (function () {
         return this.http.post('https://interviewtask.herokuapp.com/callLog/createLog', value)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return _this.createLog = data.json(); }));
     };
-    DataService.prototype.createMessage = function (value) {
+    DataService.prototype.createMessageData = function (value) {
         var _this = this;
-        return this.http.post('https://interviewtask.herokuapp.com/message/createMessage', value)
+        return this.http.post('https://interviewtask.herokuapp.com/contact/createMessage', value)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return _this.createMessage1 = data.json(); }));
+    };
+    DataService.prototype.getMessages = function () {
+        var _this = this;
+        return this.http.get('https://interviewtask.herokuapp.com/contact/getContacts')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return _this.getMessage1 = data.json(); }));
+    };
+    DataService.prototype.DelCall = function (value) {
+        var _this = this;
+        return this.http.post('https://interviewtask.herokuapp.com/callLog/removeCall', value)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (data) { return _this.DeleteCallLog = data.json(); }));
     };
     DataService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -666,7 +662,7 @@ module.exports = "*\r\n{\r\n    padding:0px;\r\n    margin:0px;\r\n}\r\n#search\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <div class=\"contact\">\n          <div class=\"row text-center\" style=\"padding:20px;\">\n            <div class=\"col-md-5 col-sm-5 col-5\">\n              <input id=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search...\">\n            </div>\n          </div>\n          <div class=\"row text-center\" style=\"margin:0px auto;width:100px;\">\n              <div class=\"col-md-5 col-sm-5 col-5\">\n               <h5>Messages</h5>\n              </div>\n          </div><hr>\n          <div class=\"row\">\n            <div class=\"col-md-4 col-sm-4 col-4\">\n              <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n            </div>\n            <div class=\"col-md-4 col-sm-4 col-4\">\n              <span>Gowtham</span><br>\n              <span>+918682919578</span><BR>\n              <span>5MIN</span>\n            </div>\n  \n            <div class=\"col-md-4 col-sm-4 col-4\">\n                <a href=\"#\"><i class=\"fa fa-phone fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n                <a href=\"#\"><i class=\"fa fa-envelope-o fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n  \n            </div>\n          </div>\n          <hr>\n\n          <div class=\"row\">\n            <div class=\"col-md-4 col-sm-4 col-4\">\n              <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n            </div>\n            <div class=\"col-md-4 col-sm-4 col-4\">\n              <span>Gowtham</span><br>\n              <span>+918682919578</span><BR>\n              <span>5MIN</span>\n            </div>\n  \n            <div class=\"col-md-4 col-sm-4 col-4\">\n                <a href=\"#\"><i class=\"fa fa-phone fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n                <a href=\"#\"><i class=\"fa fa-envelope-o fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n  \n            </div>\n          </div>\n          <hr>\n  \n            <div class=\"row\">\n              <div class=\"col-md-4 col-sm-4 col-4\">\n                <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n              </div>\n              <div class=\"col-md-4 col-sm-4 col-4\">\n                <span>Gowtham</span><br>\n                <span>+918682919578</span><BR>\n                <span>5MIN</span>\n              </div>\n    \n              <div class=\"col-md-4 col-sm-4 col-4\">\n                  <a href=\"#\"><i class=\"fa fa-phone fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n                  <a href=\"#\"><i class=\"fa fa-envelope-o fa-2x\" style=\"color:white;padding:10px;\" aria-hidden=\"true\"></i></a>             \n    \n              </div>\n            </div>\n            <hr>\n  \n        </div>\n      </div>\n  \n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>"
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <div class=\"contact\">\n          <div class=\"row text-center\" style=\"padding:20px;\">\n            <div class=\"col-md-5 col-sm-5 col-5\">\n              <input id=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search...\">\n            </div>\n          </div>\n          <div class=\"row text-center\" style=\"margin:0px auto;width:100px;\">\n              <div class=\"col-md-5 col-sm-5 col-5\">\n               <h5>Messages</h5>\n              </div>\n          </div><br>\n          <hr>\n       \n          <div *ngFor=\"let AllMessage of AllMessages\">\n            <div class=\"row\" style=\"padding-left:25px\">\n    \n              <div class=\"col-md-2 col-sm-4 col-4\">\n                <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n              </div>\n              <a routerLink=\"/landingpage/createmessage/{{AllMessage._id}}\">\n              <div class=\"col-md-6 col-sm-4 col-4 text-center\" >\n                <span>{{AllMessage.firstName}} {{AllMessage.lastName}}</span><br>\n                <span>{{AllMessage.mobileNumber}}</span><BR>\n              </div>\n              </a>\n    \n              <div class=\"col-md-4 col-sm-4 col-4\">\n                <span data-toggle=\"tooltip\" title=\"{{AllMessage.message.length}} New Messages\" class=\"badge bg-red\" style=\"padding:5px;\">{{AllMessage.message.length}}</span>           \n    \n              </div>\n              </div><br>\n              <hr>\n            </div>\n         \n  \n  \n        </div>\n      </div>\n  \n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>"
 
 /***/ }),
 
@@ -681,6 +677,7 @@ module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageComponent", function() { return MessageComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -691,10 +688,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var MessageComponent = /** @class */ (function () {
-    function MessageComponent() {
+    function MessageComponent(dataservice) {
+        this.dataservice = dataservice;
     }
     MessageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dataservice.getMessages().subscribe(function (res) {
+            _this.AllMessages = res;
+            for (var i = 0; i < _this.AllMessages.length; i++) {
+                for (var k = 0; k < _this.AllMessages[i].message.length; k++) {
+                    _this.AllMessageslength = _this.AllMessages[i].message;
+                }
+                console.log(_this.AllMessageslength);
+            }
+        });
     };
     MessageComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -702,72 +711,9 @@ var MessageComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./message.component.html */ "./src/app/message/message.component.html"),
             styles: [__webpack_require__(/*! ./message.component.css */ "./src/app/message/message.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
     ], MessageComponent);
     return MessageComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/message/send-message/send-message.component.css":
-/*!*****************************************************************!*\
-  !*** ./src/app/message/send-message/send-message.component.css ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = ".box\r\n{\r\nwidth:700px;\r\n   \r\n}\r\n\r\n\r\n@media only screen and (max-width:700px)\r\n{\r\n.box{\r\n    width:440px;\r\n}\r\n}"
-
-/***/ }),
-
-/***/ "./src/app/message/send-message/send-message.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/message/send-message/send-message.component.html ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "<!-- Construct the box with style you want. Here we are using box-danger -->\n<!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->\n<!-- The contextual class should match the box, so we are using direct-chat-danger -->\n<div class=\"box\">\n<div class=\"box box-danger direct-chat direct-chat-danger\" >\n    <div class=\"box-header with-border\">\n      <h3 class=\"box-title\">Direct Chat</h3>\n      <div class=\"box-tools pull-right\">\n        <span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3</span>\n        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i></button>\n        <!-- In box-tools add this button if you intend to use the contacts pane -->\n        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i class=\"fa fa-times\"></i></button>\n      </div>\n    </div><!-- /.box-header -->\n    <div class=\"box-body\">\n      <!-- Conversations are loaded here -->\n      <div class=\"direct-chat-messages\">\n        <!-- Message. Default to the left -->\n        <div class=\"direct-chat-msg\">\n          <div class=\"direct-chat-info clearfix\">\n            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n          </div><!-- /.direct-chat-info -->\n          <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n          <div class=\"direct-chat-text\">\n            Is this template really for free? That's unbelievable!\n          </div><!-- /.direct-chat-text -->\n        </div><!-- /.direct-chat-msg -->\n  \n        <!-- Message to the right -->\n        <div class=\"direct-chat-msg right\">\n          <div class=\"direct-chat-info clearfix\">\n            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n          </div><!-- /.direct-chat-info -->\n          <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n          <div class=\"direct-chat-text\">\n            You better believe it!\n          </div><!-- /.direct-chat-text -->\n        </div><!-- /.direct-chat-msg -->\n      </div><!--/.direct-chat-messages-->\n  \n      <!-- Contacts are loaded here -->\n      <div class=\"direct-chat-contacts\">\n        <ul class=\"contacts-list\">\n          <li>\n            <a href=\"#\">\n              <img class=\"contacts-list-img\" src=\"assets/img/avatar5.png\" alt=\"Contact Avatar\">\n              <div class=\"contacts-list-info\">\n                <span class=\"contacts-list-name\">\n                  Count Dracula\n                  <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                </span>\n                <span class=\"contacts-list-msg\">How have you been? I was...</span>\n              </div><!-- /.contacts-list-info -->\n            </a>\n          </li><!-- End Contact Item -->\n        </ul><!-- /.contatcts-list -->\n      </div><!-- /.direct-chat-pane -->\n    </div><!-- /.box-body -->\n    <div class=\"box-footer\">\n      <div class=\"input-group\">\n        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\" class=\"form-control\">\n        <span class=\"input-group-btn\">\n          <button type=\"button\" class=\"btn btn-danger btn-flat\">Send</button>\n        </span>\n      </div>\n    </div><!-- /.box-footer-->\n  </div><!--/.direct-chat -->\n  </div>"
-
-/***/ }),
-
-/***/ "./src/app/message/send-message/send-message.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/message/send-message/send-message.component.ts ***!
-  \****************************************************************/
-/*! exports provided: SendMessageComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SendMessageComponent", function() { return SendMessageComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (undefined && undefined.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var SendMessageComponent = /** @class */ (function () {
-    function SendMessageComponent() {
-    }
-    SendMessageComponent.prototype.ngOnInit = function () {
-    };
-    SendMessageComponent = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-send-message',
-            template: __webpack_require__(/*! ./send-message.component.html */ "./src/app/message/send-message/send-message.component.html"),
-            styles: [__webpack_require__(/*! ./send-message.component.css */ "./src/app/message/send-message/send-message.component.css")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], SendMessageComponent);
-    return SendMessageComponent;
 }());
 
 
@@ -855,7 +801,7 @@ module.exports = "*\r\n{\r\n    padding:0px;\r\n    margin:0px;\r\n}\r\n#search\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <div class=\"contact\">\n          <div class=\"row text-center\" style=\"padding:20px;\">\n            <div class=\"col-md-5 col-sm-5 col-5\">\n              <input id=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search...\">\n            </div>\n          </div>\n          <div class=\"row text-center\" style=\"margin:0px auto;width:100px;\">\n              <div class=\"col-md-5 col-sm-5 col-5\">\n               <h5>Histroy</h5>\n              </div>\n          </div><hr>\n          <div *ngFor=\"let BindContact of BindContact\">\n          <div class=\"row\">\n  \n            <div class=\"col-md-4 col-sm-4 col-4\">\n              <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n            </div>\n  \n            <div class=\"col-md-8 col-sm-4 col-4\" >\n              <span>{{BindContact.firstName}} {{BindContact.lastName}}</span><br>\n              <span>{{BindContact.mobileNumber}}</span><BR>\n              <span>{{BindContact.dateTime}}</span>\n            </div>\n          \n  \n            </div>\n            <hr>\n          </div>\n\n        \n  \n  \n        </div>\n      </div>\n  \n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>\n"
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <div class=\"contact\">\n          <div class=\"row text-center\" style=\"padding:20px;\">\n            <div class=\"col-md-5 col-sm-5 col-5\">\n              <input id=\"search\" type=\"text\" class=\"form-control\" placeholder=\"Search...\">\n            </div>\n          </div>\n                <div class=\"row text-center\" style=\"margin:0px auto;width:100px;\">\n                    <div class=\"col-md-5 col-sm-5 col-5\">\n                         <h5>Histroy</h5>\n                    </div>\n                </div><br><hr>\n                            <div *ngFor=\"let Contact of BindContact\">\n                               <div class=\"row\" style=\"padding-left:25px\">\n  \n                                  <div class=\"col-md-4 col-sm-4 col-4\">\n                                      <img src=\"assets/img/avatar5.png\" class=\"img-circle\" width=\"50\">\n                                  </div>\n  \n                                         <div class=\"col-md-6 col-sm-4 col-4\" >\n                                             <span>{{Contact.firstName}} {{Contact.lastName}}</span><br>\n                                                  <span>{{Contact.mobileNumber}}</span><BR>\n                                                      <span>{{Contact.dateTime}}</span>\n                                         </div>\n                                                     <div class=\"col-md-2 col-sm-2 col-2\">\n                                                       <span data-toggle=\"tooltip\" title=\"Delete?\" (click)=\"delCallLog(Contact)\"><i class=\"fa fa-trash fa-2x\" aria-hidden=\"true\" style=\"color:red\"></i></span>\n                                                     </div>\n          \n  \n                              </div>\n                               <hr>\n                             </div>\n         </div>\n      </div>\n  \n      <div class=\"col-md-5 col-sm-5 col-5\">\n        <router-outlet></router-outlet>\n      </div>\n    </div>\n  </div>\n"
 
 /***/ }),
 
@@ -885,8 +831,25 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var PhoneComponent = /** @class */ (function () {
     function PhoneComponent(dataservice) {
         this.dataservice = dataservice;
+        this.DelLog = {
+            _id: ''
+        };
     }
     PhoneComponent.prototype.ngOnInit = function () {
+        this.CallLogs();
+    };
+    PhoneComponent.prototype.delCallLog = function (value) {
+        var _this = this;
+        var data = {
+            _id: value._id,
+        };
+        this.dataservice.DelCall(data).subscribe(function (res) {
+            _this.CallLogs();
+            alert("confirm delete?");
+        });
+        console.log(data);
+    };
+    PhoneComponent.prototype.CallLogs = function () {
         var _this = this;
         this.dataservice.viewCalllog().subscribe(function (res) {
             _this.BindContact = res;
@@ -905,6 +868,77 @@ var PhoneComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
     ], PhoneComponent);
     return PhoneComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/viewmessage/viewmessage.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/viewmessage/viewmessage.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".box\r\n{\r\nwidth:700px;\r\npadding:100px;\r\n}\r\n\r\n\r\n@media only screen and (max-width:700px)\r\n{\r\n.box{\r\n    width:440px;\r\n}\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/viewmessage/viewmessage.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/viewmessage/viewmessage.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Construct the box with style you want. Here we are using box-danger -->\n<!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->\n<!-- The contextual class should match the box, so we are using direct-chat-danger -->\n<div class=\"box\">\n  <div class=\"box box-danger direct-chat direct-chat-danger\" >\n      <div class=\"box-header with-border\">\n        <h3 class=\"box-title\">Direct Chat</h3>\n        <div class=\"box-tools pull-right\">\n          <span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3</span>\n          <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i class=\"fa fa-minus\"></i></button>\n          <!-- In box-tools add this button if you intend to use the contacts pane -->\n          <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n          <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i class=\"fa fa-times\"></i></button>\n        </div>\n      </div><!-- /.box-header -->\n      <div class=\"box-body\">\n        <!-- Conversations are loaded here -->\n        <div class=\"direct-chat-messages\">\n          <!-- Message. Default to the left -->\n          <div class=\"direct-chat-msg\">\n            <div class=\"direct-chat-info clearfix\">\n              <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n              <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n            </div><!-- /.direct-chat-info -->\n            <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n            <div class=\"direct-chat-text\">\n              Is this template really for free? That's unbelievable!\n            </div><!-- /.direct-chat-text -->\n          </div><!-- /.direct-chat-msg -->\n    \n          <!-- Message to the right -->\n          <div class=\"direct-chat-msg right\">\n            <div class=\"direct-chat-info clearfix\">\n              <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n              <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n            </div><!-- /.direct-chat-info -->\n            <img class=\"direct-chat-img\" src=\"assets/img/avatar5.png\" alt=\"message user image\"><!-- /.direct-chat-img -->\n            <div class=\"direct-chat-text\">\n              You better believe it!\n            </div><!-- /.direct-chat-text -->\n          </div><!-- /.direct-chat-msg -->\n        </div><!--/.direct-chat-messages-->\n    \n        <!-- Contacts are loaded here -->\n        <div class=\"direct-chat-contacts\">\n          <ul class=\"contacts-list\">\n            <li>\n              <a href=\"#\">\n                <img class=\"contacts-list-img\" src=\"assets/img/avatar5.png\" alt=\"Contact Avatar\">\n                <div class=\"contacts-list-info\">\n                  <span class=\"contacts-list-name\">\n                    Count Dracula\n                    <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                  </span>\n                  <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                </div><!-- /.contacts-list-info -->\n              </a>\n            </li><!-- End Contact Item -->\n          </ul><!-- /.contatcts-list -->\n        </div><!-- /.direct-chat-pane -->\n      </div><!-- /.box-body -->\n      <div class=\"box-footer\">\n        <div class=\"input-group\">\n          <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\" class=\"form-control\">\n          <span class=\"input-group-btn\">\n            <button type=\"button\" class=\"btn btn-danger btn-flat\">Send</button>\n          </span>\n        </div>\n      </div><!-- /.box-footer-->\n    </div><!--/.direct-chat -->\n    </div>\n"
+
+/***/ }),
+
+/***/ "./src/app/viewmessage/viewmessage.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/viewmessage/viewmessage.component.ts ***!
+  \******************************************************/
+/*! exports provided: ViewmessageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewmessageComponent", function() { return ViewmessageComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ViewmessageComponent = /** @class */ (function () {
+    function ViewmessageComponent(dataservice) {
+        this.dataservice = dataservice;
+    }
+    ViewmessageComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.dataservice.getMessages().subscribe(function (res) {
+            _this.AllMessages = res;
+            console.log(res);
+        });
+    };
+    ViewmessageComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-viewmessage',
+            template: __webpack_require__(/*! ./viewmessage.component.html */ "./src/app/viewmessage/viewmessage.component.html"),
+            styles: [__webpack_require__(/*! ./viewmessage.component.css */ "./src/app/viewmessage/viewmessage.component.css")]
+        }),
+        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
+    ], ViewmessageComponent);
+    return ViewmessageComponent;
 }());
 
 

@@ -7,33 +7,32 @@
               <input id="search" type="text" class="form-control" placeholder="Search...">
             </div>
           </div>
-          <div class="row text-center" style="margin:0px auto;width:100px;">
-              <div class="col-md-5 col-sm-5 col-5">
-               <h5>Histroy</h5>
-              </div>
-          </div><hr>
-          <div *ngFor="let BindContact of BindContact">
-          <div class="row">
+                <div class="row text-center" style="margin:0px auto;width:100px;">
+                    <div class="col-md-5 col-sm-5 col-5">
+                         <h5>Histroy</h5>
+                    </div>
+                </div><br><hr>
+                            <div *ngFor="let Contact of BindContact">
+                               <div class="row" style="padding-left:25px">
   
-            <div class="col-md-4 col-sm-4 col-4">
-              <img src="assets/img/avatar5.png" class="img-circle" width="50">
-            </div>
+                                  <div class="col-md-4 col-sm-4 col-4">
+                                      <img src="assets/img/avatar5.png" class="img-circle" width="50">
+                                  </div>
   
-            <div class="col-md-8 col-sm-4 col-4" >
-              <span>{{BindContact.firstName}} {{BindContact.lastName}}</span><br>
-              <span>{{BindContact.mobileNumber}}</span><BR>
-              <span>{{BindContact.dateTime}}</span>
-            </div>
+                                         <div class="col-md-6 col-sm-4 col-4" >
+                                             <span>{{Contact.firstName}} {{Contact.lastName}}</span><br>
+                                                  <span>{{Contact.mobileNumber}}</span><BR>
+                                                      <span>{{Contact.dateTime}}</span>
+                                         </div>
+                                                     <div class="col-md-2 col-sm-2 col-2">
+                                                       <span data-toggle="tooltip" title="Delete?" (click)="delCallLog(Contact)"><i class="fa fa-trash fa-2x" aria-hidden="true" style="color:red"></i></span>
+                                                     </div>
           
   
-            </div>
-            <hr>
-          </div>
-
-        
-  
-  
-        </div>
+                              </div>
+                               <hr>
+                             </div>
+         </div>
       </div>
   
       <div class="col-md-5 col-sm-5 col-5">
